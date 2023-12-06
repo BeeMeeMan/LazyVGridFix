@@ -11,6 +11,7 @@
 		8A4C7E772B207D5C00439D9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C7E762B207D5C00439D9D /* ContentView.swift */; };
 		8A4C7E792B207D6100439D9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C7E782B207D6100439D9D /* Assets.xcassets */; };
 		8A4C7E7C2B207D6100439D9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4C7E7B2B207D6100439D9D /* Preview Assets.xcassets */; };
+		8A4C7E832B20884400439D9D /* FixTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4C7E822B20884400439D9D /* FixTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		8A4C7E762B207D5C00439D9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8A4C7E782B207D6100439D9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A4C7E7B2B207D6100439D9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8A4C7E822B20884400439D9D /* FixTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				8A4C7E742B207D5C00439D9D /* LazyVGridFixApp.swift */,
 				8A4C7E762B207D5C00439D9D /* ContentView.swift */,
+				8A4C7E822B20884400439D9D /* FixTransition.swift */,
 				8A4C7E782B207D6100439D9D /* Assets.xcassets */,
 				8A4C7E7A2B207D6100439D9D /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A4C7E772B207D5C00439D9D /* ContentView.swift in Sources */,
+				8A4C7E832B20884400439D9D /* FixTransition.swift in Sources */,
 				8A4C7E752B207D5C00439D9D /* LazyVGridFixApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

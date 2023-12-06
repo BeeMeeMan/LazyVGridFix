@@ -8,14 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showView = false
+
+    private let data = ["1", "2", "3","4", "5", "6", "7", "8", "9","*", "0", "#"]
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button("Toggle appearence") {
+                withAnimation {
+                    showView.toggle()
+                }
+            }
+            
+            Spacer()
+
+            if showView {
+                LazyVGrid(columns: Array(repeating: GridItem(), count: 3), spacing: 10) {
+                    ForEach(data, id: \.self, content: cellContent)
+                }
+                .fixTransition()
+                .transition(.move(edge: .bottom))
+            }
         }
-        .padding()
+    }
+    
+    private func cellContent(text: String) -> some View {
+        Circle()
+            .frame(width: 70, height: 70)
+            .foregroundColor(.gray)
+            .overlay(
+                Text(text)
+            )
     }
 }
 
